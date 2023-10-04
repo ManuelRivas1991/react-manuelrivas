@@ -1,0 +1,50 @@
+.dogs-container {
+    width: 99.5%;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    height: 90vh;
+    overflow-y: scroll;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    align-items:start;
+    
+}
+
+.spinner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow-y: none;
+}
+
+
+@media screen and (min-width: 600px){
+    .dogs-container {
+        padding: 30px;
+        grid-template: 1fr / 1fr 1fr;
+        scrollbar-color: var(--scrollBar-color) transparent;
+        scrollbar-width:thin
+    }
+
+    
+}
+
+
+@media screen and (min-width: 900px){
+    .dogs-container {
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .dogs-container {
+        grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .dogs-container {
+        grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,168 @@
+{
+    "dogs":[
+    {
+        "name": "Hadif",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/pinscher-miniature/n02107312_854.jpg",
+        "size": "Pequeño",
+        "character": "Afable",
+        "birthdate": "03/2020",
+        "adoptionStatus": false,
+        "id": "Rfz4KqX9nYH1yc6n"
+    },
+    {
+        "name": "Odín",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/stbernard/n02109525_9243.jpg",
+        "size": "Grande",
+        "character": "Dominante",
+        "birthdate": "08/2018",
+        "adoptionStatus": false,
+        "id": "Bch3aHdaW8gQEARk"
+    },
+    {
+        "name": "Axel",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/segugio-italian/n02090722_002.jpg",
+        "size": "Mediano",
+        "character": "Activo",
+        "birthdate": "10/2016",
+        "adoptionStatus": false,
+        "id": "GEYEBJDC8dXRFTy8"
+    },
+    {
+        "name": "Macuali",
+        "sex": "Macho",
+        "petLifeStage": "Cachorro",
+        "img": "https://images.dog.ceo/breeds/kelpie/n02105412_3075.jpg",
+        "size": "Pequeño",
+        "character": "Sociable",
+        "birthdate": "07/2023",
+        "adoptionStatus": false,
+        "id": "twR6TNWaCo9UFhzy"
+    },
+    {
+        "name": "Samantha",
+        "sex": "Hembra",
+        "petLifeStage": "Adulta",
+        "img": "https://images.dog.ceo/breeds/corgi-cardigan/n02113186_12513.jpg",
+        "size": "Mediana",
+        "character": "Sociable",
+        "birthdate": "09/2019",
+        "adoptionStatus": false,
+        "id": "6rsfe6QPKXKQJp5e"
+    },
+    {
+        "name": "Oskar",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/segugio-italian/n02090722_001.jpg",
+        "size": "Grande",
+        "character": "Juguetón",
+        "birthdate": "07/2017",
+        "adoptionStatus": false,
+        "id": "UT5vxmFQMX73jpuu"
+    },
+    {
+        "name": "Mac Alan",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/bullterrier-staffordshire/n02093256_6992.jpg",
+        "size": "Grande",
+        "character": "Cariñoso",
+        "birthdate": "03/2018",
+        "adoptionStatus": false,
+        "id": "1BhFS2sqrkcBVH8A"
+    },
+    {
+        "name": "Rex",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/dingo/n02115641_670.jpg",
+        "size": "Mediano",
+        "character": "Activo",
+        "birthdate": "08/2020",
+        "adoptionStatus": false,
+        "id": "vMyVt1V2fYJvgm56"
+    },
+    {
+        "name": "Pun",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/hound-basset/n02088238_11383.jpg",
+        "size": "Mediano",
+        "character": "Dócil",
+        "birthdate": "09/2012",
+        "adoptionStatus": false,
+        "id": "N7Jg6MmSv5mdR53T"
+    },
+    {
+        "name": "Lola",
+        "sex": "Hembra",
+        "petLifeStage": "Adulta",
+        "img": "https://images.dog.ceo/breeds/mountain-swiss/n02107574_640.jpg",
+        "size": "Mediana",
+        "character": "Cariñosa",
+        "birthdate": "05/2018",
+        "adoptionStatus": false,
+        "id": "jzwKrYo9z6Gquvvv"
+    },
+    {
+        "name": "Jack",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/beagle/n02088364_8820.jpg",
+        "size": "Pequeño",
+        "character": "Tímido",
+        "birthdate": "06/2021",
+        "adoptionStatus": false,
+        "id": "GSSkj33gqwqf3EeD"
+    },
+    {
+        "name": "Helge",
+        "sex": "Hembra",
+        "petLifeStage": "Adulta",
+        "img": "https://images.dog.ceo/breeds/bluetick/n02088632_3699.jpg",
+        "size": "Grande",
+        "character": "Temperamental",
+        "birthdate": "12/2019",
+        "adoptionStatus": false,
+        "id": "K6aDPq2nuEi4XdxJ"
+    },
+    {
+        "name": "Joe",
+        "sex": "Macho",
+        "petLifeStage": "Cachorro",
+        "img": "https://images.dog.ceo/breeds/terrier-russell/iguet3.jpg",
+        "size": "Pequeño",
+        "character": "Tímido",
+        "birthdate": "06/2023",
+        "adoptionStatus": false,
+        "id": "shbbywatenU84EDX"
+    },
+    {
+        "name": "Sven",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/cattledog-australian/IMG_2432.jpg",
+        "size": "Mediano",
+        "character": "Cariñoso",
+        "birthdate": "03/2020",
+        "adoptionStatus": false,
+        "id": "wGXDtNzVjGABGwf9"
+    },
+    {
+        "name": "Kramper",
+        "sex": "Macho",
+        "petLifeStage": "Adulto",
+        "img": "https://images.dog.ceo/breeds/bluetick/n02088632_2764.jpg",
+        "size": "Grande",
+        "character": "Cariñoso",
+        "birthdate": "02/2018",
+        "adoptionStatus": false,
+        "id": "iDFXkByVikjpzV1j"
+    }
+]}

@@ -1,0 +1,13 @@
+.navbar-container{
+    display: grid;
+    grid-template: 1fr / 1fr 2fr 1fr; 
+    text-align: center;
+}
+
+.navbar-container a{
+    padding: 10px;
+}
+
+.navbar-container a.active{
+    color: var(--primary-color);
+}
