@@ -30,7 +30,7 @@ const Home = () => {
             durante la convivencia y que precisa de conocimiento previo.
           </p>
           <br />
-          <h3>1. Segunda oportunidad para un perro</h3>
+          <h2>1. Segunda oportunidad para un perro</h2>
           <p>
            En la mayoría de los casos, adoptar significa darle una segunda oportunidad a un animal que ha
            sufrido un proceso de abandono, y en ocasiones maltrato. Acogerlo en tu casa de por vida y darle la 
@@ -38,7 +38,7 @@ const Home = () => {
            autoestima.
           </p>
           <br />
-          <h3>2. Agradecimiento y vínculo afectivo con un perro adoptado</h3>
+          <h2>2. Agradecimiento y vínculo afectivo con un perro adoptado</h2>
           <p>
             A cambio, la recompensa que vas a obtener es infinita. Aunque algunos de los perros que han pasado 
             por estos procesos pueden ser temerosos o asustadizos, su capacidad de agradecimiento a medida 
@@ -46,7 +46,7 @@ const Home = () => {
             contribuirá a un vínculo de amor mutuo e incondicional.
           </p>
           <br />
-          <h3>3. Elegir perro de adopción</h3>
+          <h2>3. Elegir perro de adopción</h2>
           <p>
             A diferencia de lo que mucha gente cree, en los refugios puedes encontrar perros de todas las edades 
             y de múltiples razas. Las ventajas asociadas son que además puedes obtener información detallada 
@@ -55,13 +55,13 @@ const Home = () => {
             asegurarte de que escoges a tu compañero ideal.
           </p>
           <br />
-          <h3>4. Contribuyes a ayudar a los perros en adopción</h3>
+          <h2>4. Contribuyes a ayudar a los perros en adopción</h2>
           <p>
           Cuando adoptas a un perro abandonado estás contribuyendo a reducir el número de perros que viven en el refugio, 
           y a mejorar las condiciones (recursos y fondos) de los que seguirán esperando que alguien los adopte.
           </p>
           <br />
-          <h3>5. Pasos para adoptar un perro</h3>
+          <h2>5. Pasos para adoptar un perro</h2>
           <p>
             El proceso de adopción se realiza de forma controlada y profesional, y se lleva a cabo mediante un protocolo orientado 
             a garantizar el bienestar del perro a tu lado, al ser ésta la única manera de asegurar que el perro no volverá a pasar 
