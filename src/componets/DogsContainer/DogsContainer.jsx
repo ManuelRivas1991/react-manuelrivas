@@ -1,28 +1,19 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import Dog from "../Dog/Dog";
-import './DogsContainer.css';
+import "./DogsContainer.css";
 
-const DogsContainer = ({dogs}) => {
-
-     
+const DogsContainer = ({ dogs }) => {
   return (
     <>
-    {
-      dogs.map((dog, index) => (
-     
-        <Dog dog={dog} key={index}/>
-      ))
-    }
-    </>  
-    
-  )
-}
-
+      {dogs.map((dog, index) => (
+        <Dog dog={dog} key={index} />
+      ))}
+    </>
+  );
+};
 
 DogsContainer.propTypes = {
+  dogs: PropTypes.array.isRequired,
+};
 
-  dogs: PropTypes.array.isRequired
-
-}
-
-export default DogsContainer
+export default DogsContainer;

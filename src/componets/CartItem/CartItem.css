@@ -1,0 +1,4 @@
+.item__FiDelete {
+    color: var(--text-color);
+    cursor: pointer;
+}

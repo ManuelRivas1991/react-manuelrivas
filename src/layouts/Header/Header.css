@@ -39,6 +39,10 @@
     column-gap: 10px;
 }
 
+.logo svg{
+    cursor: pointer;
+}
+
 .header-container span {
     display: none;
 }
