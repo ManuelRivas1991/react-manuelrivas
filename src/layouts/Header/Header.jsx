@@ -8,8 +8,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Header = ({
   setasideStatus, 
-  asideStatus,
-  adoptedDogsLength
+  asideStatus
 }) => {
   
   return (
@@ -42,10 +41,7 @@ const Header = ({
         // Se modifica el estado de asideStatus a false para que se cierre el aside al hacer click en el CartWidget
         onClick={()=>setasideStatus(false)}
       >
-        <CartWidget 
-          // Se pasa la cantidad de perros adoptados como prop
-          adoptedDogsLength={adoptedDogsLength}
-        />
+        <CartWidget/>
       </div>
     </header>
   )
@@ -54,8 +50,7 @@ const Header = ({
 
 Header.propTypes = {
   setasideStatus: PropTypes.func.isRequired,
-  asideStatus: PropTypes.bool.isRequired,
-  adoptedDogsLength: PropTypes.number.isRequired
+  asideStatus: PropTypes.bool.isRequired
   }
 
 export default Header

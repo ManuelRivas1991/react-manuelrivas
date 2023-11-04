@@ -7,6 +7,7 @@
     justify-self: center;
     height: auto;
     font-size: 0.8rem;
+    cursor: pointer;
   }
 
   .dog-card__image {
@@ -38,7 +39,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
   }
   
   
@@ -57,7 +57,6 @@
   .dog-card:hover {
     transition-property: transform;
     transition-duration: 0.3s;
-    cursor: pointer;
     transform: scale(1.05);
   }
 

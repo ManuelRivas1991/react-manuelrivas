@@ -1,22 +1,21 @@
 import { BiSolidHomeSmile } from "react-icons/bi";
-import PropTypes from 'prop-types';
-
+import { CartContext } from "../../context/CartContext";
 import './CartWidget.css';
+import { useContext } from "react";
 
 
-const CartWidget = ({adoptedDogsLength}) => {
+const CartWidget = () => {
+
+    const { totalDogs} = useContext(CartContext);
+
     return (
         <div className="cart-widget">
             <BiSolidHomeSmile size={45} className="cart-widget__BiSolidHomeSmile"/>
             <div className="cart-widget__count">
-                {adoptedDogsLength}
+                {totalDogs}
             </div>
         </div>
     )
 }
-
-CartWidget.propTypes = {
-    adoptedDogsLength: PropTypes.number.isRequired
-    }
 
 export default CartWidget;

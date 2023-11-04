@@ -2,15 +2,15 @@ import PropTypes from 'prop-types';
 import Dog from "../Dog/Dog";
 import './DogsContainer.css';
 
-const DogsContainer = ({dogs, setAdoptedDogs}) => {
+const DogsContainer = ({dogs}) => {
 
      
   return (
     <>
     {
       dogs.map((dog, index) => (
-        // Se pasa el perro y la función setAdoptedDogs al componente Dog
-        <Dog dog={dog} key={index} setAdoptedDogs={setAdoptedDogs}/>
+     
+        <Dog dog={dog} key={index}/>
       ))
     }
     </>  
@@ -21,8 +21,7 @@ const DogsContainer = ({dogs, setAdoptedDogs}) => {
 
 DogsContainer.propTypes = {
 
-  dogs: PropTypes.array.isRequired,
-  setAdoptedDogs: PropTypes.func.isRequired
+  dogs: PropTypes.array.isRequired
 
 }
 

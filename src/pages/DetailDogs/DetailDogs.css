@@ -1,0 +1,5 @@
+.detailDogsContainers {
+    text-align: center;
+    height:  90vh;
+    overflow-y: scroll;
+}
