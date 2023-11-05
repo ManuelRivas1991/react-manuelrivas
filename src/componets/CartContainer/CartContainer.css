@@ -1,13 +1,22 @@
 .cartContainer {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  width: 100%;
+  margin: 0 auto;
+  height: 90vh;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.cartContainer section {
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .responsive-table {
-  width: 95%;
+  width: 100%;
 }
 
 .responsive-table li {
@@ -18,7 +27,6 @@
 }
 
 .responsive-table li div {
-  flex-basis: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,8 +38,29 @@
   text-transform: uppercase;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 5px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 800px) {
-  .responsive-table {
-    width: unset;
+  .cartContainer {
+    width: 99.5%;
+    grid-template: 1fr / 1fr 1fr;
+    padding-top: unset;
+  }
+  .cartContainer section {
+    margin: 5%;
   }
 }
