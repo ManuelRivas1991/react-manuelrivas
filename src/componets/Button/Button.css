@@ -5,12 +5,15 @@ button{
 }
 
 .button-primary {
+    border-radius: 8px;
     background-color: var(--primary-color);
-    font-weight: 700;
-    font-size: 1rem;
-    margin: 20px auto;
-    width: 112px;
-    height: 36px;
+    color: var(--just-white);
+    font-weight: 500;
+    font-size: 1em;
+    margin: 20px;
+    padding: 0.5em 1em;
+    min-width: 112px;
+    min-height: 36px;
     cursor: pointer;
     transition: all 0.150s ease;
 }
@@ -21,3 +24,13 @@ button{
 .button-primary:active{
     transform: translate(1px,1px);
 }
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+
+
+

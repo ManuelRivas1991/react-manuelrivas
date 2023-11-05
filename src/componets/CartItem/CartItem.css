@@ -1,4 +1,24 @@
+.table-row{
+    background-color: var(--just-white);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform: scale(1);
+}
+
+.item__img{
+    aspect-ratio: 16/11;
+    width: 100%;
+    max-width: 150px;
+}
+
 .item__FiDelete {
     color: var(--text-color);
     cursor: pointer;
+}
+
+.table-row:hover {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform: scale(1.02);
 }

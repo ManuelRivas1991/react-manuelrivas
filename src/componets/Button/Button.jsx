@@ -1,9 +1,9 @@
 import "./Button.css";
 
-function Button(props) {
+function Button({handleClick, buttonTitle}) {
   return (
-    <button onClick={props.handleClick} className="button-primary">
-      {props.title}
+    <button onClick={handleClick} className="button-primary">
+      {buttonTitle}
     </button>
   );
 }

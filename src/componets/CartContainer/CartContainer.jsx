@@ -3,11 +3,19 @@ import "./CartContainer.css";
 
 const CartContainer = ({ cart, deleteDogtById }) => {
   return (
-    <div className="cartContainer">
-      {cart.map((dog) => (
-        <CartItem key={dog.id} dog={dog} deleteDogtById={deleteDogtById} />
-      ))}
-    </div>
+    <form className="cartContainer">
+      <ul className="responsive-table">
+        <li className="table-header">
+          <div>Foto</div>
+          <div>Nombre</div>
+          <div>Quitar</div>
+        </li>
+
+        {cart.map((dog) => (
+          <CartItem key={dog.id} dog={dog} deleteDogtById={deleteDogtById} />
+        ))}
+      </ul>
+    </form>
   );
 };
 

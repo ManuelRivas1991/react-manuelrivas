@@ -3,17 +3,23 @@ import "./CartItem.css";
 
 const CartItem = ({ dog, deleteDogtById }) => {
   return (
-    <div className="item">
-      <span>{dog.name}</span>
-
-      <button
-        onClick={() => {
-          deleteDogtById(dog.id);
-        }}
-      >
-        <FiDelete className="item__FiDelete" size={20} />
-      </button>
-    </div>
+    <li className="table-row">
+      <div>
+        <img src={dog.img} alt={dog.name} className="item__img" />
+      </div>
+      <div>
+        <span> {dog.name} </span>
+      </div>
+      <div>
+        <button
+          onClick={() => {
+            deleteDogtById(dog.id);
+          }}
+        >
+          <FiDelete className="item__FiDelete" size={25} />
+        </button>
+      </div>
+    </li>
   );
 };
 

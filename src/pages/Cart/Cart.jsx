@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import CartContainer from "../../componets/CartContainer/CartContainer";
-import Button from "../../componets/Button/Button";
-
+import Modal from "../../componets/Modal/Modal";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
 const Cart = () => {
@@ -12,21 +11,16 @@ const Cart = () => {
 
   return (
     <main>
-      <div>
-        {cart.length === 0 ? (
-          <div>
-            <h1 className="cart__title">
-              No hay perritos en tu lista de adopción.
-            </h1>
-            <Button
-              title="Volver"
-              handleClick={() => navigate("/dogs/all")}
-            ></Button>
-          </div>
-        ) : (
-          <CartContainer cart={cart} deleteDogtById={deleteDogtById} />
-        )}
-      </div>
+      {cart.length === 0 ? (
+        <Modal
+          modalTitle="No hay perritos en tu lista de adopción."
+          buttonTitle="Ver Listado"
+          handleClickButton={() => navigate("/dogs/all")}
+          handleClickClose={() => navigate(-1)}
+        />
+      ) : (
+        <CartContainer cart={cart} deleteDogtById={deleteDogtById} />
+      )}
     </main>
   );
 };

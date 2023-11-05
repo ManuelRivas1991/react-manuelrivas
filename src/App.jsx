@@ -27,7 +27,7 @@ const App = () => {
             <Route path=":category" element={<Dogs />} />
           </Route>
 
-          <Route path="/detail/:id" element={<DetailDogs />} />
+          <Route path="/detail/:id" element={<DetailDogs setasideStatus={setasideStatus} />} />
 
           <Route path="/cart" element={<Cart />} />
         </Routes>
