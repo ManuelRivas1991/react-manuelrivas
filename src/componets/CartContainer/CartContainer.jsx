@@ -3,7 +3,8 @@ import Button from "../../componets/Button/Button";
 import "./CartContainer.css";
 
 const CartContainer = ({ cart, deleteDogtById }) => {
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log("submit");
   };
 
@@ -27,6 +28,7 @@ const CartContainer = ({ cart, deleteDogtById }) => {
 
       <section>
         <h2>Formulario de adopción</h2>
+        <p>Por favor, completa el siguiente formulario:</p>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
           <input type="text" className="form-control" id="name" />
