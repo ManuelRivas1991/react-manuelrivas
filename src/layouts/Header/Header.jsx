@@ -15,7 +15,6 @@ const Header = ({ setasideStatus, asideStatus }) => {
         <MdMenu
           size={40}
           className="menu-icon__mdmenu"
-          // Se modifica el estado de asideStatus a su valor contrario al hacer click en el icono
           onClick={() => setasideStatus(!asideStatus)}
         />
 
@@ -26,7 +25,8 @@ const Header = ({ setasideStatus, asideStatus }) => {
         <span>Adopción</span>
         <FaPaw
           onClick={() => {
-            navigate("/");
+            navigate("/dogs/all");
+            setasideStatus(false);
           }}
           size={45}
           fill={"#10B981"}

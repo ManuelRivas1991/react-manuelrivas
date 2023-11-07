@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import CartItem from "../CartItem/CartItem";
 import Button from "../../componets/Button/Button";
 import "./CartContainer.css";
@@ -58,6 +59,11 @@ const CartContainer = ({ cart, deleteDogtById }) => {
       </section>
     </form>
   );
+};
+
+CartContainer.propTypes = {
+  cart: PropTypes.array.isRequired,
+  deleteDogtById: PropTypes.func.isRequired,
 };
 
 export default CartContainer;

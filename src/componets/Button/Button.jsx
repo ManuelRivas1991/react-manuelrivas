@@ -1,6 +1,7 @@
+import PropTypes from "prop-types";
 import "./Button.css";
 
-function Button({handleClick, buttonTitle}) {
+function Button({ handleClick, buttonTitle }) {
   return (
     <button onClick={handleClick} className="button-primary">
       {buttonTitle}
@@ -8,4 +9,9 @@ function Button({handleClick, buttonTitle}) {
   );
 }
 
-export default Button; // Esto sirve para exportar mi componente y que pueda ser reutilizado o usado donde se requiera
+Button.propTypes = {
+  buttonTitle: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
+};
+
+export default Button;

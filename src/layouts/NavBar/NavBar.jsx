@@ -5,8 +5,6 @@ import "./NavBar.css";
 const NavBar = ({ setasideStatus }) => {
   return (
     <nav className="navbar-container">
-      {/* Se modifica el estado de asideStatus a false 
-        para que se cierre el aside al hacer click en el NavLink */}
       <NavLink to="/" onClick={() => setasideStatus(false)}>
         Inicio
       </NavLink>

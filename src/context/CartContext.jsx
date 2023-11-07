@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext();
@@ -45,12 +46,16 @@ const CartProvider = ({ children }) => {
         addDog,
         deleteDogtById,
         totalDogs,
-        existInCart
+        existInCart,
       }}
     >
       {children}
     </CartContext.Provider>
   );
+};
+
+CartProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default CartProvider;

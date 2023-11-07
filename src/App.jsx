@@ -1,16 +1,18 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import CartProvider from "./context/CartContext";
 import Header from "./layouts/Header/Header";
 import Aside from "./layouts/Aside/Aside";
+
 import Home from "./pages/Home/Home";
 import Dogs from "./pages/Dogs/Dogs";
 import DetailDogs from "./pages/DetailDogs/DetailDogs";
 import Cart from "./pages/Cart/Cart";
+
 import "./App.css";
 
 const App = () => {
-  //asideStatus controla si el aside esta abierto o cerrado
   const [asideStatus, setasideStatus] = useState(false);
 
   return (
@@ -27,7 +29,10 @@ const App = () => {
             <Route path=":category" element={<Dogs />} />
           </Route>
 
-          <Route path="/detail/:id" element={<DetailDogs setasideStatus={setasideStatus} />} />
+          <Route
+            path="/detail/:id"
+            element={<DetailDogs setasideStatus={setasideStatus} />}
+          />
 
           <Route path="/cart" element={<Cart />} />
         </Routes>

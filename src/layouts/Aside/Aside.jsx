@@ -5,13 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Aside = ({ asideStatus, setasideStatus }) => {
   return (
-    <aside
-      className={
-        /*Si asideStatus es true se aplica la clase active, 
-         si no se aplica la clase disabled*/
-        `aside-container ${asideStatus ? "active" : "disabled"}`
-      }
-    >
+    <aside className={`aside-container ${asideStatus ? "active" : "disabled"}`}>
       <header>
         <span>Adopción</span>
         <span>Responsable</span>
@@ -19,21 +13,12 @@ const Aside = ({ asideStatus, setasideStatus }) => {
 
       <hr />
 
-      <NavBar
-        /* Se pasa la funcion setasideStatus como prop 
-        para que se ejecute al hacer click en un NavLink*/
-        setasideStatus={setasideStatus}
-      />
+      <NavBar setasideStatus={setasideStatus} />
 
       <hr />
 
       <section className="aside-container__allDogs">
-        <NavLink
-          to="/dogs/all"
-          /* Se modifica el estado de asideStatus a false 
-          para que se cierre el aside al hacer click en el NavLink*/
-          onClick={() => setasideStatus(false)}
-        >
+        <NavLink to="/dogs/all" onClick={() => setasideStatus(false)}>
           Mostrar Todos
         </NavLink>
       </section>
@@ -46,8 +31,6 @@ const Aside = ({ asideStatus, setasideStatus }) => {
         </h4>
 
         <div>
-          {/* Se modifica el estado de asideStatus a false 
-          para que se cierre el aside al hacer click en el NavLink */}
           <NavLink to="/dogs/females" onClick={() => setasideStatus(false)}>
             Hembras
           </NavLink>

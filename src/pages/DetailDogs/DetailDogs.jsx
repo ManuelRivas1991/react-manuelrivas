@@ -5,7 +5,7 @@ import environments from "../../environments/environments";
 import Button from "../../componets/Button/Button";
 import Modal from "../../componets/Modal/Modal";
 import "./DetailDogs.css";
-import { calcularEdad } from "../../helpers/helpers";
+import { calculateAge } from "../../helpers/helpers";
 
 const DetailDogs = ({ setasideStatus }) => {
   const { id } = useParams();
@@ -72,7 +72,7 @@ const DetailDogs = ({ setasideStatus }) => {
         <section>
           <header>
             <h1>{dog.name}</h1>
-            <span> {dog.birthdate && calcularEdad(dog.birthdate)} </span>
+            <span> {dog.birthdate && calculateAge(dog.birthdate)} </span>
           </header>
           <span>
             <strong>

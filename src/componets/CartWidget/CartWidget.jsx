@@ -1,7 +1,8 @@
-import { BiSolidHomeSmile } from "react-icons/bi";
-import { CartContext } from "../../context/CartContext";
-import "./CartWidget.css";
 import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
+import { BiSolidHomeSmile } from "react-icons/bi";
+
+import "./CartWidget.css";
 
 const CartWidget = () => {
   const { totalDogs } = useContext(CartContext);
