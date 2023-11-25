@@ -1,5 +1,5 @@
 const environments = {
-  dogsUrl: "https://run.mocky.io/v3/ddc80719-0bcc-4788-a146-d448727d3e69",
+  dogsUrl: "https://run.mocky.io/v3/1bc8ff59-999f-4762-8074-ee884b35fa84",
 };
 
 export default environments;

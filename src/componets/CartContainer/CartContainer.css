@@ -39,16 +39,6 @@
   text-transform: uppercase;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.form-group label {
-  margin-bottom: 5px;
-}
-
 .form-control {
   padding: 5px;
   border: 1px solid var(--secondary-color);

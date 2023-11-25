@@ -3,7 +3,7 @@ import DogsContainer from "../../componets/DogsContainer/DogsContainer";
 import { useParams } from "react-router-dom";
 import environments from "../../environments/environments";
 import { useEffect, useState } from "react";
-import { filterByAdoptionStatus, filterDogs } from "../../helpers/helpers";
+import { filterDogs } from "../../helpers/helpers";
 import "./Dogs.css";
 
 const Dogs = () => {
@@ -15,9 +15,7 @@ const Dogs = () => {
     try {
       const response = await fetch(environments.dogsUrl);
       const data = await response.json();
-      // Se filtran los perros por estado de adopcion
-      const result = filterByAdoptionStatus(data);
-      setDogs(result);
+      setDogs(data);
     } catch (err) {
       console.error(err);
     }

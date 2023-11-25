@@ -13,7 +13,7 @@ const NavBar = ({ setasideStatus }) => {
         Quienes Somos
       </NavLink>
 
-      <NavLink to="/contact" onClick={() => setasideStatus(false)}>
+      <NavLink to="/contactUs" onClick={() => setasideStatus(false)}>
         Contacto
       </NavLink>
     </nav>

@@ -16,6 +16,10 @@
   padding-bottom: 150px;
 }
 
+.detail-container section p {
+  text-wrap: pretty;
+}
+
 .detail-container section header {
   border-top: 5px solid var(--primary-color);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -37,12 +41,5 @@
 
   .detail-container div img {
     width: 90%;
-  }
-
-  .home-container section {
-    padding: 25px;
-    overflow-y: scroll;
-    scrollbar-color: var(--scrollBar-color) transparent;
-    scrollbar-width: thin;
   }
 }

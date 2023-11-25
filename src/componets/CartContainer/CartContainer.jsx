@@ -28,7 +28,7 @@ const CartContainer = ({ cart, deleteDogtById }) => {
       </section>
 
       <section>
-        <h2>Formulario de adopción</h2>
+        <h2>Formulario para inicio de adopción</h2>
         <p>Por favor, completa el siguiente formulario:</p>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>

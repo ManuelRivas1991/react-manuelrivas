@@ -50,6 +50,16 @@ button {
   font-family: var(--poppins-family);
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
 @media screen and (min-width: 800px) {
   ::-webkit-scrollbar-track {
     border-radius: 2.5px;

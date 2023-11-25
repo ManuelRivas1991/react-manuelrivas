@@ -1,0 +1,50 @@
+.aboutUs-container {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    align-items: start;
+    padding: 20px;
+    height: 90vh;
+    overflow-y: scroll;
+  }
+  
+  .aboutUs-container div img {
+    width: 100%;
+  }
+  .aboutUs-container div h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .aboutUs-container section {
+    height: 100%;
+    padding-bottom: 150px;
+  }
+  
+  .aboutUs-container header {
+    border-top: 5px solid var(--primary-color);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .aboutUs-container {
+      grid-template: 1fr / 1fr 1fr;
+      align-items: center;
+      overflow-y: hidden;
+    }
+  
+    .aboutUs-container div {
+      max-height: 100%;
+      overflow: hidden;
+    }
+  
+ 
+    .aboutUs-container section {
+      padding: 25px;
+      overflow-y: scroll;
+      scrollbar-color: var(--scrollBar-color) transparent;
+      scrollbar-width: thin;
+    }
+  }
+  

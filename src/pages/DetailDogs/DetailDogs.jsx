@@ -1,11 +1,12 @@
+import PropTypes from "prop-types";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 import environments from "../../environments/environments";
 import Button from "../../componets/Button/Button";
 import Modal from "../../componets/Modal/Modal";
-import "./DetailDogs.css";
 import { calculateAge } from "../../helpers/helpers";
+import "./DetailDogs.css";
 
 const DetailDogs = ({ setasideStatus }) => {
   const { id } = useParams();
@@ -18,7 +19,7 @@ const DetailDogs = ({ setasideStatus }) => {
   const getDogbyId = async (id) => {
     try {
       const response = await fetch(environments.dogsUrl);
-      const data = await response.json(); // data es un array de productos
+      const data = await response.json();
       const result = data.find((dog) => dog.id === id);
       setDog(result);
     } catch (error) {
@@ -79,16 +80,7 @@ const DetailDogs = ({ setasideStatus }) => {
               {dog.sex} de carácter {dog.character} y tamaño {dog.size}
             </strong>
           </span>
-          <p>
-            El proceso de adopción se realiza de forma controlada y profesional,
-            y se lleva a cabo mediante un protocolo orientado a garantizar el
-            bienestar del perro a tu lado, al ser ésta la única manera de
-            asegurar que el perro no volverá a pasar por situaciones que puedan
-            traumatizarlo. Pese a lo que pueda pensarse, es un proceso
-            relativamente rápido, en el que la entidad se involucra al 100%,
-            ofreciendo incluso consejo y asesoramiento sobre todo lo referente
-            al perro si lo necesitas.
-          </p>
+          <p>{dog.detail}</p>
 
           <Button
             buttonTitle="Adoptar"
@@ -105,6 +97,10 @@ const DetailDogs = ({ setasideStatus }) => {
       </main>
     </>
   );
+};
+
+DetailDogs.propTypes = {
+  setasideStatus: PropTypes.func.isRequired,
 };
 
 export default DetailDogs;

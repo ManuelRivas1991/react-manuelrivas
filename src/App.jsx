@@ -9,6 +9,8 @@ import Home from "./pages/Home/Home";
 import Dogs from "./pages/Dogs/Dogs";
 import DetailDogs from "./pages/DetailDogs/DetailDogs";
 import Cart from "./pages/Cart/Cart";
+import ContactUs from "./pages/ContactUs/ContactUs";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 import "./App.css";
 
@@ -24,16 +26,13 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-
-          <Route path="/dogs" element={<Dogs />}>
-            <Route path=":category" element={<Dogs />} />
-          </Route>
-
+          <Route path="/dogs/:category" element={<Dogs />} />
           <Route
             path="/detail/:id"
             element={<DetailDogs setasideStatus={setasideStatus} />}
           />
-
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
 

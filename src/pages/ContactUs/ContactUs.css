@@ -1,0 +1,25 @@
+.contactUs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 3% 2.5%;
+}
+
+.contactUs-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .contactUs-container p {
+    width: 50%;
+  }
+  .contactUs-container form {
+    width: 50%;
+  }
+}

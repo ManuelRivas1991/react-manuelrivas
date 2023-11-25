@@ -1,5 +1,3 @@
-/*calculateAge: recibe un string con la fecha de nacimiento 
-y devuelve la edad en años o meses*/
 const fechaActual = new Date().getTime();
 
 export const calculateAge = (fechaString) => {
@@ -19,14 +17,6 @@ export const calculateAge = (fechaString) => {
   return edad > 0 ? `${edad} años` : `${meses - edad * 12} meses`;
 };
 
-/*filterByAdoptionStatus: recibe un array de perros 
-y devuelve un array con los perros que no están adoptados*/
-export const filterByAdoptionStatus = (data) => {
-  return data.filter((dog) => !dog.adoptionStatus);
-};
-
-/*filterDogs: recibe un array de perros y una categoría 
-y devuelve un array de perros filtrado por categoría*/
 const filters = {
   all: (dogs) => dogs,
   females: (dogs) => dogs.filter((dog) => dog.sex === "Hembra"),
