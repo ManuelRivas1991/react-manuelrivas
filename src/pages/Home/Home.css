@@ -9,6 +9,8 @@
 
 .home-container div img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
 }
 
 .home-container section {

@@ -7,6 +7,7 @@ const Home = () => {
         <img
           src="https://images.pexels.com/photos/13394871/pexels-photo-13394871.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt="perrito"
+          width="100" height="100"
         />
       </div>
       <section>
