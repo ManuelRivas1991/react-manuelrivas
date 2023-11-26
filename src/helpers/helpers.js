@@ -1,20 +1,18 @@
-const fechaActual = new Date().getTime();
+const fechaActual = new Date();
 
 export const calculateAge = (fechaString) => {
   const [mes, anio] = fechaString.split("/");
   const fecha = new Date(anio, mes - 1);
-  const milisegundos = fecha.getTime();
-  const diferenciaMilisegundos = fechaActual - milisegundos;
 
   //Calcular edad en meses
-  const meses = Math.floor(
-    diferenciaMilisegundos / (1000 * 60 * 60 * 24 * 30.44)
-  );
+  const meses =
+    (fechaActual.getFullYear() - fecha.getFullYear()) * 12 +
+    (fechaActual.getMonth() - fecha.getMonth());
 
   //Calcular edad en años
   const edad = Math.floor(meses / 12);
 
-  return edad > 0 ? `${edad} años` : `${meses - edad * 12} meses`;
+  return edad > 0 ? `${edad} años` : `${meses} meses`;
 };
 
 const filters = {
@@ -27,4 +25,8 @@ const filters = {
 export const filterDogs = (dogs, category) => {
   const filterFunction = filters[category] || filters.all;
   return filterFunction(dogs);
+};
+
+export const upDateLocalStorage = (cart) => {
+  localStorage.setItem("cart", JSON.stringify(cart));
 };

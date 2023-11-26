@@ -1,10 +1,11 @@
+
 import { useNavigate } from "react-router-dom";
 import { MdMenu } from "react-icons/md";
 import { FaPaw } from "react-icons/fa6";
 import CartWidget from "../../componets/CartWidget/CartWidget";
+import NavBar from "../NavBar/NavBar";
 import PropTypes from "prop-types";
 import "./Header.css";
-import NavBar from "../NavBar/NavBar";
 
 const Header = ({ setasideStatus, asideStatus }) => {
   const navigate = useNavigate();

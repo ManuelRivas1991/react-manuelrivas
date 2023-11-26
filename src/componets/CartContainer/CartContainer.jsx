@@ -3,7 +3,7 @@ import CartItem from "../CartItem/CartItem";
 import Button from "../../componets/Button/Button";
 import "./CartContainer.css";
 
-const CartContainer = ({ cart, deleteDogtById }) => {
+const CartContainer = ({ cart, deleteDogById }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submit");
@@ -13,7 +13,7 @@ const CartContainer = ({ cart, deleteDogtById }) => {
     <form className="cartContainer">
       <section>
         <h1>Lista de adopción</h1>
-        <p>Estos son los perritos que vas a adoptar</p>
+        <p>Estos son los perritos que quieres adoptar</p>
 
         <ul className="responsive-table">
           <li className="table-header">
@@ -22,13 +22,13 @@ const CartContainer = ({ cart, deleteDogtById }) => {
             <div>Quitar</div>
           </li>
           {cart.map((dog) => (
-            <CartItem key={dog.id} dog={dog} deleteDogtById={deleteDogtById} />
+            <CartItem key={dog.id} dog={dog} deleteDogById={deleteDogById} />
           ))}
         </ul>
       </section>
 
       <section>
-        <h2>Formulario para inicio de adopción</h2>
+        <h2>Para iniciar el proceso de adopción</h2>
         <p>Por favor, completa el siguiente formulario:</p>
         <div className="form-group">
           <label htmlFor="name">Nombre</label>
@@ -63,7 +63,7 @@ const CartContainer = ({ cart, deleteDogtById }) => {
 
 CartContainer.propTypes = {
   cart: PropTypes.array.isRequired,
-  deleteDogtById: PropTypes.func.isRequired,
+  deleteDogById: PropTypes.func.isRequired,
 };
 
 export default CartContainer;

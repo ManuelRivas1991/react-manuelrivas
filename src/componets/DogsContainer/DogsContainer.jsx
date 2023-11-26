@@ -14,6 +14,6 @@ const DogsContainer = ({ dogs }) => {
 
 DogsContainer.propTypes = {
   dogs: PropTypes.array.isRequired,
-}; 
+};
 
 export default DogsContainer;

@@ -1,64 +1,56 @@
 .dog-card {
-    text-align: center;
-    background-color:  var(--bg-card);
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    display: block;
-    margin: 20px;
-    justify-self: center;
-    height: auto;
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
+  text-align: center;
+  background-color: var(--bg-card);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  display: block;
+  margin: 20px;
+  justify-self: center;
+  height: auto;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
 
-  .dog-card__image {
-    width: 100%;
-    aspect-ratio: 16/11;
-  }
-  
-  .dog-card section {
-    display: grid;
-    grid-template: 1fr / 2fr 1fr;
-    padding: 20px;
-    
-  }
+.dog-card__image {
+  width: 100%;
+  aspect-ratio: 16/11;
+}
 
-  .dog-card__image {
-    width: 100%;
-    object-fit: fill;
-  }
+.dog-card section {
+  display: grid;
+  grid-template: 1fr / 2fr 1fr;
+  padding: 20px;
+}
 
-  .dog-card__info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
+.dog-card__image {
+  width: 100%;
+  object-fit: fill;
+}
 
-  .dog-card__click {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  
+.dog-card__info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
 
+.dog-card__click {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-  
-@media screen and (min-width: 800px){
+@media screen and (min-width: 800px) {
   .dog-card {
     transition-property: transform;
     transition-duration: 0.3s;
     transform: scale(1);
-    
   }
-
 
   .dog-card:hover {
     transition-property: transform;
     transition-duration: 0.3s;
     transform: scale(1.05);
   }
-
- 
 }

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 
 const Cart = () => {
-  const { cart, deleteDogtById } = useContext(CartContext);
+  const { cart, deleteDogById } = useContext(CartContext);
   const navigate = useNavigate();
 
   return (
@@ -19,7 +19,7 @@ const Cart = () => {
           handleClickClose={() => navigate(-1)}
         />
       ) : (
-        <CartContainer cart={cart} deleteDogtById={deleteDogtById} />
+        <CartContainer cart={cart} deleteDogById={deleteDogById} />
       )}
     </main>
   );

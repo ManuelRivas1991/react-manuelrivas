@@ -1,15 +1,12 @@
 import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react";
+import { upDateLocalStorage } from "../helpers/helpers";
 
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [totalDogs, setTotalDogs] = useState(0);
-
-  const upDateLocalStorage = (cart) => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-  };
 
   const existInCart = (id) => {
     return cart.some((dog) => dog.id === id);
@@ -24,7 +21,7 @@ const CartProvider = ({ children }) => {
     upDateLocalStorage([...cart, dog]);
   };
 
-  const deleteDogtById = (id) => {
+  const deleteDogById = (id) => {
     const newCart = cart.filter((dog) => dog.id !== id);
     setCart(newCart);
     upDateLocalStorage(newCart);
@@ -44,7 +41,7 @@ const CartProvider = ({ children }) => {
       value={{
         cart,
         addDog,
-        deleteDogtById,
+        deleteDogById,
         totalDogs,
         existInCart,
       }}

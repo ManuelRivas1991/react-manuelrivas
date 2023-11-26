@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { FiDelete } from "react-icons/fi";
 import "./CartItem.css";
 
-const CartItem = ({ dog, deleteDogtById }) => {
+const CartItem = ({ dog, deleteDogById }) => {
   return (
     <li className="table-row">
       <div>
@@ -14,7 +14,7 @@ const CartItem = ({ dog, deleteDogtById }) => {
       <div>
         <button
           onClick={() => {
-            deleteDogtById(dog.id);
+            deleteDogById(dog.id);
           }}
         >
           <FiDelete className="item__FiDelete" size={25} />
@@ -30,7 +30,7 @@ CartItem.propTypes = {
     name: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
   }).isRequired,
-  deleteDogtById: PropTypes.func.isRequired,
+  deleteDogById: PropTypes.func.isRequired,
 };
 
 export default CartItem;

@@ -46,7 +46,6 @@ const ContactUs = () => {
             id=""
             cols="30"
             rows="10"
-            placeholder="Mensaje"
           ></textarea>
         </div>
 

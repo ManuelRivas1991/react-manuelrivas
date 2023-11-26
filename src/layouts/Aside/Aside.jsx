@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import "./Aside.css";
 import PropTypes from "prop-types";
 import NavBar from "../NavBar/NavBar";
+import "./Aside.css";
 
 const Aside = ({ asideStatus, setasideStatus }) => {
   return (

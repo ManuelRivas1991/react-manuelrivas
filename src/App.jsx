@@ -5,6 +5,7 @@ import CartProvider from "./context/CartContext";
 import Header from "./layouts/Header/Header";
 import Aside from "./layouts/Aside/Aside";
 
+import PageNotFound from "./pages/PageNotFound/PageNotFound";
 import Home from "./pages/Home/Home";
 import Dogs from "./pages/Dogs/Dogs";
 import DetailDogs from "./pages/DetailDogs/DetailDogs";
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
 
         {/* Aca iría un footer */}

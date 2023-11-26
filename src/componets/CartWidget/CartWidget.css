@@ -1,28 +1,27 @@
-.cart-widget{
-    position: relative;
+.cart-widget {
+  position: relative;
 }
 
-.cart-widget__BiSolidHomeSmile{
-    border-radius: 50%;
-    padding: 5px;
+.cart-widget__BiSolidHomeSmile {
+  border-radius: 50%;
+  padding: 5px;
 }
 
-.cart-widget__BiSolidHomeSmile:hover{
-    background-color: var(--secondary-color);
-    cursor: pointer;
+.cart-widget__BiSolidHomeSmile:hover {
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }
 
-.cart-widget__count{
-    position: absolute;
-    top: 0;
-    right: -0.5rem;
-    background-color: var(--primary-color);
-    width: 1.3rem;
-    height: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 900;
-    border-radius: 50%;
-
+.cart-widget__count {
+  position: absolute;
+  top: 0;
+  right: -0.5rem;
+  background-color: var(--primary-color);
+  width: 1.3rem;
+  height: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  border-radius: 50%;
 }
