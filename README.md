@@ -8,7 +8,7 @@
 
 ## Instrucciones de Instalación
 
-    1. Clona el repositorio:`git clone https://github.com/ManuelRivas1991/practica.git`
+    1. Clona el repositorio:`git clone https://github.com/ManuelRivas1991/react-manuelrivas.git`
     2. Instala las dependencias: `npm install`
     3. Ejecuta el proyecto: `npm run dev`
 
