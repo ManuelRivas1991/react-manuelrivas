@@ -2,7 +2,11 @@
 
 ## Descripción
 
-    Este proyecto es una aplicación web que administra la adopción responsable de perros en un refugio. La aplicación permite a los usuarios buscar perros disponibles para adopción, ver información sobre los perros, y contactarse con el refugio para adoptar.
+Este proyecto es una aplicación web que administra la adopción responsable de perros en un refugio.
+
+La aplicación permite a los usuarios buscar perros disponibles para adopción, ver información sobre los perros, 
+
+y contactarse con el refugio para adoptar.
 
 ![ANIMATION](./src/assets/Animation.gif)
 
@@ -14,7 +18,7 @@
 
 ## Estructura de Archivos
 
-    - `src`: Directorio principal del código fuente.
+    -`src`: Directorio principal del código fuente.
     - `src/assets`: Directorio de imágenes.
     - `src/components`: Directorio de componentes de React.
     - `src/context`: Directorio de contextos.
@@ -31,5 +35,3 @@
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Router DOM](https://reactrouter.com/web/guides/quick-start)
 - [React Spinners](https://www.npmjs.com/package/react-spinners)
-
-
